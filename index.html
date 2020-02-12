@@ -45,7 +45,7 @@
  
 <body onload="onBodyLoaded()">
    <div id="body-content">
-       <h1>HRD Add Mobile Accessibility for Chat Test</h1>
+       <h1>HRD Add Mobile Accessibility for Chat Test 1</h1>
  
        <style type='text/css'>
            .embeddedServiceHelpButton .helpButton .uiButton {
@@ -65,40 +65,15 @@
        </style>
    </div>
  
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //または false
 		embedded_svc.settings.language = ''; //たとえば、「en」または「en-US」を入力します
-
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(エキスパートとチャットにデフォルト設定)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(エージェントがオフラインにデフォルト設定)
-
-		//embedded_svc.settings.loadingText = ''; //(読み込み中にデフォルト設定)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(リリースのドメインを設定して、訪問者がチャットセッション中にサブドメインを移動できるようにします)
-
-		// チャット の設定
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //事前チャットフォームの項目の自動入力を設定
-		//embedded_svc.settings.fallbackRouting = []; //ボタン ID、ユーザ ID、または userId_buttonId の配列
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(デフォルトは [お問い合わせ])
-
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
+		
 		embedded_svc.init(
 			'https://svcsdo-20191127--spring20.my.salesforce.com',
 			'https://spring20-cirrus-sccommunity-16eabd2ff16.cs112.force.com/customer',
